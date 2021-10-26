@@ -13,8 +13,9 @@ renamed as (
     select
         id as order_id,
         user_id as customer_id,
-        order_date,
-        status
+        TIMESTAMP(order_date) as order_date,
+        status,
+        placed_by
 
     from source
 
