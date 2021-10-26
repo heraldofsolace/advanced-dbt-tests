@@ -10,6 +10,9 @@ models:
       - name: last_name
         tests:
           - not_null
+      - name: email
+        tests:
+          - unique
 
   - name: stg_orders
     columns:
@@ -21,6 +24,7 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+          - not_null
       - name: placed_by
         tests:
           - not_null
@@ -35,3 +39,4 @@ models:
         tests:
           - accepted_values:
               values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+          - not_null
