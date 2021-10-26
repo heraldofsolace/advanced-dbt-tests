@@ -1,0 +1,3 @@
+id,exclusion_value,model_name,column_name,owner,description
+1,15,stg_customers,customer_id,Aniket,Signed up due to a bug
+2,101,stg_customers,customer_id,Aniket,Shares account with spouse
